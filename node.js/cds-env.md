@@ -228,13 +228,15 @@ You can provide static settings in a `"cds"` section of your project's _package.
 Alternatively, you can put static settings in _.cdsrc.json_ file in your project root:
 
 ```json
-"requires": {
-  "db": { "kind": "sql" }
+{
+  "requires": {
+    "db": { "kind": "sql" }
+  }
 }
 ```
 
 ::: tip
-_.cdsrc_ goes without an enclosing  `"cds"` section.
+_.cdsrc_ goes without an enclosing  `"cds"` section but the outermost curly brackets are still required.
 :::
 
 ## Private Project Settings {#private-project-settings}
